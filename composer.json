@@ -1,0 +1,35 @@
+{
+    "name": "bariseser/laravel-widget",
+    "description": "Widgets for Laravel Blade Template",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Baris Eser",
+            "email": "bariseser@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": ">=5.5",
+        "illuminate/contracts": ">=5.5",
+        "illuminate/container": ">=5.5",
+        "illuminate/view": ">=5.5"
+
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bariseser\\LaravelWidget\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bariseser\\LaravelWidget\\WidgetServiceProvider"
+            ]
+        }
+    }
+}
